@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="distance">Distance</string>
+    <string name="temperature">Temperature</string>
+    <string name="weight">Weight</string>
+    <string name="volume">Volume</string>
+
+
+    <string name="edit_temperature"></string>
+    <string name="button_temperature"></string>
+    <string name="view_temperature"> Results</string>
+
+
+    <string name="edit_distance"></string>
+    <string id="button_distance" name="button_distance">Calculate Distance</string>
+    <string name="view_distance">Results</string>
+
+    <string name="title_view"></string>
+    <string name="edit_weight"></string>
+    <string name="button_weight"></string>
+    <string name="view_weight">Results</string>
+    <string name="spinner_weight">Choose a Weight</string>
+    <string-array name="weight_arrays">
+        <item>Pounds</item>
+        <item>Kilogram</item>
+    </string-array>
+
+    <string name="edit_volume"></string>
+    <string name="button_volume"></string>
+    <string name="view_volume">Results</string>
+</resources>

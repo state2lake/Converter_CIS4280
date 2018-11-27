@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
 
     >
+    <EditText
+        android:id="@+id/title_distance"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="'Mile' or 'Kilometer'"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:inputType="text"
+         />
 
     <EditText
         android:id="@+id/edit_distance"
@@ -17,13 +30,15 @@
         android:ellipsize="start"
         android:gravity="center_horizontal"
         android:hint="Distance"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:inputType="number"/>
+
 
 
     <TextView
         android:id="@+id/view_distance"
         android:layout_width="200dp"
-        android:layout_height="35dp"
+        android:layout_height="55dp"
         android:layout_below="@id/edit_distance"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
@@ -34,23 +49,16 @@
 
     <Button
         android:id="@+id/button_distance"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_marginTop="25dp"
-        android:text="Calculate Distance"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/view_distance"
-        />
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="147dp"
+        android:text="Calculate Distance" />
 
 
 
 
 
-
-
-
-    // there should be a keyboard that pops up when text edit is selected and goes away when drop
-    down is selected
 
 </RelativeLayout>

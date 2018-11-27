@@ -17,13 +17,14 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/*Written by: Jonathan Clark */
+
 public class Weight extends AppCompatActivity {
     EditText titleView;
     EditText editWeight;
     TextView resultWeight;
     Button buttonWeight;
-    Spinner spinnerWeight;
-    String record;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,20 +48,13 @@ public class Weight extends AppCompatActivity {
         });
     }
 
-    public void showKeyboard(View v) {
-        InputMethodManager mgr = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        mgr.showSoftInput(editWeight, InputMethodManager.SHOW_IMPLICIT);
-    }
-
 
 
     public void showCalculation (EditText a, TextView b, String e){
+        String value = a.getText().toString();
 
+        int finalValue = Integer.parseInt(value);
         if(e.equals("Pound")  ) {
-
-            String value = a.getText().toString();
-
-            int finalValue = Integer.parseInt(value);
 
             double total = finalValue * 0.454;
 
@@ -70,9 +64,7 @@ public class Weight extends AppCompatActivity {
 
 
         }else if(e.equals("Kilogram")){
-            String value = a.getText().toString();
 
-            int finalValue = Integer.parseInt(value);
 
             double total = finalValue * 2.205;
 
@@ -83,6 +75,8 @@ public class Weight extends AppCompatActivity {
             b.setText( finalResult + " Pound(s) in " + a.getText().toString() + " Kilogram(s)");
             } else  {
             alertBox();
+        }if(finalValue < 0) {
+            alertBoxNumber();
         }
 
 
@@ -91,7 +85,22 @@ public class Weight extends AppCompatActivity {
         AlertDialog alertDialog = new AlertDialog.Builder(Weight.this).create();
         alertDialog.setTitle("Alert");
 
-        alertDialog.setMessage("Sorry, the words in the first text field must be 'Pounds' or 'Kilogram'");
+        alertDialog.setMessage("Sorry, the words in the first text field must be 'Pound' or 'Kilogram'");
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+
+        alertDialog.show();
+    }
+    public void alertBoxNumber() {
+        AlertDialog alertDialog = new AlertDialog.Builder(Weight.this).create();
+        alertDialog.setTitle("Alert");
+
+        alertDialog.setMessage("Sorry, the number must be greater than 0");
         alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {

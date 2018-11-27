@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@color/black">
+
 
     <EditText
         android:id="@+id/edit_temperature"
@@ -13,9 +14,8 @@
         android:hint="@string/edit_temperature"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"/>
-
-
+        android:layout_margin="10dp"
+        android:background="@color/white"/>
 
 
 
@@ -27,7 +27,8 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/view_temperature"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:background="@color/white"/>
 
     <TextView
         android:id="@+id/view_temperature"
@@ -37,10 +38,8 @@
         android:layout_below="@id/button_id"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:background="@color/white"/>
 
-
-
-    // there should be a keyboard that pops up when text edit is selected and goes away when drop down is selected
 
 </RelativeLayout>

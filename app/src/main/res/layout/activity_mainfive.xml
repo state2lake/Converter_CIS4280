@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black">
 
     <EditText
         android:id="@+id/edit_volume"
@@ -14,10 +15,10 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
+        android:background="@color/white"
         />
 
 
-    // add values to spinner
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="wrap_content"
@@ -25,7 +26,8 @@
         android:layout_toRightOf="@id/edit_volume"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:background="@color/white"/>
 
 
     <Button
@@ -36,7 +38,8 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/view_volume"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:background="@color/white"/>
 
     <TextView
         android:id="@+id/result_volume"
@@ -46,10 +49,10 @@
         android:layout_below="@id/button_id"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:background="@color/white"/>
 
 
-    // add real time update of calculation
     <TextView
         android:id="@+id/view_volume"
         android:layout_height="wrap_content"
@@ -57,8 +60,8 @@
         android:layout_toRightOf="@id/result_volume"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:background="@color/white"/>
 
-    // there should be a keyboard that pops up when text edit is selected and goes away when drop down is selected
 
 </RelativeLayout>

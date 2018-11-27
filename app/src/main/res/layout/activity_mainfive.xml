@@ -13,16 +13,8 @@
         android:layout_height="48dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-<<<<<<< HEAD
         android:layout_margin="10dp"
         android:background="@color/white"
-        />
-
-
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="wrap_content"
-=======
         android:layout_marginTop="105dp"
         android:ellipsize="start"
         android:gravity="center_horizontal"
@@ -33,11 +25,9 @@
     <EditText
         android:id="@+id/edit_volume"
         android:layout_width="200dp"
->>>>>>> b2687cb951aff593ff81aa9a764baf341fc645d1
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-<<<<<<< HEAD
         android:layout_margin="10dp"
         android:background="@color/white"/>
 
@@ -51,8 +41,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/view_volume"
         android:layout_margin="10dp"
-        android:background="@color/white"/>
-=======
+        android:background="@color/white"
         android:layout_marginTop="215dp"
         android:ellipsize="start"
         android:gravity="center_horizontal"
@@ -60,17 +49,12 @@
         android:textSize="20sp"
         android:inputType="number" />
 
-
-
->>>>>>> b2687cb951aff593ff81aa9a764baf341fc645d1
-
     <TextView
         android:id="@+id/result_volume"
         android:layout_width="200dp"
         android:layout_height="90dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-<<<<<<< HEAD
         android:layout_margin="10dp"
         android:background="@color/white"/>
 
@@ -83,9 +67,7 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
-        android:background="@color/white"/>
-
-=======
+        android:background="@color/white"
         android:layout_marginBottom="172dp"
         android:text="Results"
         android:textAlignment="center"
@@ -98,6 +80,5 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="90dp"
         android:text="Calculate Volume" />
->>>>>>> b2687cb951aff593ff81aa9a764baf341fc645d1
 
 </RelativeLayout>

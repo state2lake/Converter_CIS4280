@@ -18,14 +18,11 @@
         android:layout_marginTop="105dp"
         android:ellipsize="start"
         android:gravity="center_horizontal"
-<<<<<<< HEAD
         android:textSize="20sp"
         android:background="@color/white"
-         />
-=======
         android:hint="'Pound' or 'Kilogram'"
-        android:textSize="20sp" />
->>>>>>> b2687cb951aff593ff81aa9a764baf341fc645d1
+        />
+
 
     <EditText
         android:id="@+id/edit_weight"
@@ -37,13 +34,10 @@
         android:ellipsize="start"
         android:gravity="center_horizontal"
         android:hint="Weight"
-<<<<<<< HEAD
         android:textSize="20sp"
-        android:background="@color/white"/>
-=======
+        android:background="@color/white"
         android:inputType="number"
-        android:textSize="20sp" />
->>>>>>> b2687cb951aff593ff81aa9a764baf341fc645d1
+         />
 
 
     <TextView
@@ -55,12 +49,9 @@
         android:layout_marginBottom="172dp"
         android:text="Results"
         android:textAlignment="center"
-<<<<<<< HEAD
         android:textSize="20sp"
-        android:background="@color/white"/>
-=======
-        android:textSize="20sp" />
->>>>>>> b2687cb951aff593ff81aa9a764baf341fc645d1
+        android:background="@color/white" />
+
 
     <Button
         android:id="@+id/button_weight"
@@ -69,16 +60,14 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="90dp"
         android:onClick="displayResults"
-<<<<<<< HEAD
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/view_weight"
         android:layout_margin="10dp"
         android:layout_marginTop="25dp"
-        android:background="@color/white"/>
-=======
+        android:background="@color/white"
         android:text="Calculate Weight" />
 
->>>>>>> b2687cb951aff593ff81aa9a764baf341fc645d1
+
 
 </RelativeLayout>

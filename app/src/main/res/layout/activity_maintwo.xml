@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/page_title"
+        android:text="Temperature"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:textSize="18pt"
+        />
+
 
     <EditText
         android:id="@+id/edit_temperature"

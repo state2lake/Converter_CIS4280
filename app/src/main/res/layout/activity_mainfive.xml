@@ -4,81 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@color/black">
 
     <EditText
         android:id="@+id/title_volume"
-        android:layout_width="233dp"
-        android:layout_height="48dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:background="@color/white"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="'Liters' or 'Gallons'"
         android:ellipsize="start"
         android:gravity="center_horizontal"
-        android:hint="'Liters' or 'Gallons'"
-        android:textSize="20sp" />
+        android:inputType="text"
+        android:background="@color/white" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/page_title"
+        android:text="Volume"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:textSize="18pt"
+        />
 
 
     <EditText
         android:id="@+id/edit_volume"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:background="@color/white"/>
-
-
-    <Button
-        android:id="@+id/button_view"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/button_volume"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/view_volume"
-        android:layout_margin="10dp"
-        android:background="@color/white"
-        android:layout_marginTop="215dp"
+        android:layout_marginTop="115dp"
         android:ellipsize="start"
         android:gravity="center_horizontal"
         android:hint="Volume"
         android:textSize="20sp"
-        android:inputType="number" />
-
-    <TextView
-        android:id="@+id/result_volume"
-        android:layout_width="200dp"
-        android:layout_height="90dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
+        android:inputType="number"
         android:background="@color/white"/>
 
 
-    <TextView
-        android:id="@+id/view_volume"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_toRightOf="@id/result_volume"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:background="@color/white"
-        android:layout_marginBottom="172dp"
-        android:text="Results"
-        android:textAlignment="center"
-        android:textSize="20sp"/>
-
     <Button
         android:id="@+id/button_volume"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="90dp"
-        android:text="Calculate Volume" />
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="45dp"
+        android:text="Calculate Volume"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/view_distance"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/view_volume"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/edit_volume"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:text="Results"
+        android:background="@color/white"/>
 
 </RelativeLayout>

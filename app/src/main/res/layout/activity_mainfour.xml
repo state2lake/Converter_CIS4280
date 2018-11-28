@@ -21,17 +21,16 @@
         android:background="@color/white" />
 
     <TextView
+        android:id="@+id/page_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/page_title"
-        android:text="Weight"
-        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_margin="10dp"
         android:background="@color/colorAccent"
-        android:layout_alignParentTop="true"
-        android:textSize="18pt"
-        />
+        android:text="            Weight"
+        android:textSize="18pt" />
 
 
     <EditText
@@ -40,40 +39,62 @@
         android:layout_height="35dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="115dp"
+        android:layout_marginTop="210dp"
+        android:background="@color/white"
         android:ellipsize="start"
         android:gravity="center_horizontal"
         android:hint="Weight"
-        android:textSize="20sp"
-        android:background="@color/white"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textSize="20sp" />
 
 
     <Button
         android:id="@+id/button_weight"
         android:layout_width="200dp"
         android:layout_height="35dp"
-        android:layout_marginTop="45dp"
-        android:text="Calculate Weight"
-        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/view_weight"
+        android:layout_marginBottom="159dp"
         android:background="@color/white"
-        android:onClick="displayResults"/>
+        android:onClick="displayResults"
+        android:text="Calculate Weight" />
 
 
     <TextView
         android:id="@+id/view_weight"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_below="@id/edit_weight"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
+        android:layout_marginBottom="229dp"
+        android:background="@color/white"
         android:textAlignment="center"
         android:textSize="20sp"
-        tools:text="Results"
-        android:background="@color/white" />
+        tools:text="Results" />
 
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="            Enter lb or kg" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="109dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/page_title"
+        android:layout_marginBottom="13dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="       BACK" />
 
 
 </RelativeLayout>

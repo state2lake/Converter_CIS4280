@@ -31,7 +31,7 @@ public class Weight extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainfour);
 
-        titleView = (EditText) findViewById(R.id.title_view);
+        titleView = (EditText) findViewById(R.id.title_weight);
         editWeight = (EditText) findViewById(R.id.edit_weight);
         resultWeight = (TextView) findViewById(R.id.view_weight);
         buttonWeight = (Button) findViewById(R.id.button_weight);

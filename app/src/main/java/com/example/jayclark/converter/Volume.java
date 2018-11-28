@@ -23,7 +23,7 @@ public class Volume extends AppCompatActivity {
 
         titleVolume = (EditText) findViewById(R.id.title_volume);
         editVolume = (EditText) findViewById(R.id.edit_volume);
-        resultVolume = (TextView) findViewById(R.id.result_volume);
+        resultVolume = (TextView) findViewById(R.id.view_volume);
         buttonVolume = (Button) findViewById(R.id.button_volume);
 
         buttonVolume.setOnClickListener(new View.OnClickListener() {

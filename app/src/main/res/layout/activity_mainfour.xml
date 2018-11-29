@@ -82,19 +82,19 @@
         android:background="@android:color/background_light"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="            Enter lb or kg" />
+        android:hint="Enter lb or kg" />
 
-    <EditText
-        android:id="@+id/editText5"
+    <Button
+        android:id="@+id/backButton"
         android:layout_width="109dp"
         android:layout_height="32dp"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/page_title"
-        android:layout_marginBottom="13dp"
+        android:layout_marginBottom="12dp"
         android:background="@android:color/background_light"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="       BACK" />
+        android:text="BACK"
+        android:onClick="goBack"/>
 
 
 </RelativeLayout>

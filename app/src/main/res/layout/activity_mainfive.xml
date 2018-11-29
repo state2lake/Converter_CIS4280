@@ -81,10 +81,10 @@
         android:background="@android:color/background_light"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="            Enter l or gal" />
+        android:hint="Enter l or gal" />
 
-    <EditText
-        android:id="@+id/editText4"
+    <Button
+        android:id="@+id/backButton"
         android:layout_width="109dp"
         android:layout_height="32dp"
         android:layout_alignParentBottom="true"
@@ -92,7 +92,7 @@
         android:layout_marginBottom="12dp"
         android:background="@android:color/background_light"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="      BACK" />
+        android:text="BACK"
+        android:onClick="goBack"/>
 
 </RelativeLayout>

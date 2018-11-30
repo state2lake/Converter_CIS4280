@@ -2,6 +2,7 @@ package com.example.jayclark.converter;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -76,5 +77,10 @@ public class Temperature extends AppCompatActivity {
 
 
         alertDialog.show();
+    }
+
+    public void goBack(View view){
+        Intent backToHome = new Intent(Temperature.this, MainActivity.class);
+        startActivity(backToHome);
     }
 }

@@ -2,6 +2,7 @@ package com.example.jayclark.converter;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -75,5 +76,10 @@ public class Volume extends AppCompatActivity {
 
 
         alertDialog.show();
+    }
+
+    public void goBack(View view){
+        Intent backToHome = new Intent(Volume.this, MainActivity.class);
+        startActivity(backToHome);
     }
 }

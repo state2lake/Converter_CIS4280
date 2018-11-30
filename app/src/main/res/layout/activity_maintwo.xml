@@ -60,7 +60,7 @@
         android:background="@color/white"
         android:onClick="displayResults"
         android:text="Calculate Temperature" />
-        android:inputType="numberDecimal|numberSigned" />
+
 
 
     <TextView

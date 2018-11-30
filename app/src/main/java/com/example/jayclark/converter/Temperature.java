@@ -13,51 +13,54 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Temperature extends AppCompatActivity {
-    EditText titleView;
+    EditText titleTemperature;
     EditText editTemperature;
     TextView resultTemperature;
-    Button buttonTemperature;
+    Button   buttonTemperature;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maintwo);
 
-        titleView = (EditText) findViewById(R.id.title_temperature);
+        titleTemperature = (EditText) findViewById(R.id.title_temperature);
         editTemperature = (EditText) findViewById(R.id.edit_temperature);
         resultTemperature = (TextView) findViewById(R.id.view_temperature);
         buttonTemperature = (Button) findViewById(R.id.button_temperature);
 
 
         buttonTemperature.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                showCalculation(editTemperature, resultTemperature,titleView.getText().toString());
+                displayResults(editTemperature, resultTemperature,titleTemperature.getText().toString());
             }
         });
     }
 
-    public void showCalculation(EditText a, TextView b, String e) {
-        String value = a.getText().toString();
+    public void displayResults(EditText editTemperature, TextView resultTemperature, String titleTemperature) {
 
-        int finalValue=Integer.parseInt(value);
+        String value = editTemperature.getText().toString();
+        int finalValue = Integer.parseInt(value);
 
-        if(e.equals("Fahrenheit") ) {
+
+
+        if(titleTemperature.equals("F") ) {
 
             double total = (finalValue-32)* 5/9 ;
 
             String finalResult = Double.toString(total);
 
 
-            b.setText(String.format("When it is " + a.getText().toString() + "F degrees outside, it is " + finalResult  + "C "));
-        }else if(e.equals("Celsius")  ) {
+            resultTemperature.setText(String.format("When it is " + editTemperature.getText().toString() + "F degrees outside, it is " + finalResult  + "C "));
+        }else if(titleTemperature.equals("C")  ) {
 
             double total = (finalValue * 9/5) + 32;
 
             String finalResult = Double.toString(total);
 
-            b.setText(finalResult);
+            resultTemperature.setText(finalResult);
 
-            b.setText("When it is " + a.getText().toString() + "C degrees outside, it is" + finalResult  + "F ");
+            resultTemperature.setText("When it is " + editTemperature.getText().toString() + "C degrees outside, it is" + finalResult  + "F ");
         } else {
             alertBox();
         }
@@ -67,7 +70,7 @@ public class Temperature extends AppCompatActivity {
         AlertDialog alertDialog = new AlertDialog.Builder(Temperature.this).create();
         alertDialog.setTitle("Alert");
 
-        alertDialog.setMessage("Sorry, the words in the first text field must be 'Fahrenheit' or 'Celsius'");
+        alertDialog.setMessage("Sorry, the words in the first text field must be 'F' or 'C' and you must enter a value");
         alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {

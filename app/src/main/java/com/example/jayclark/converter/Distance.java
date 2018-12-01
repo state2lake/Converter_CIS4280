@@ -35,44 +35,41 @@ public class Distance extends AppCompatActivity {
         editTitle = (EditText) findViewById(R.id.title_distance);
         editDistance = (EditText) findViewById(R.id.edit_distance);
         resultDistance = (TextView) findViewById(R.id.view_distance);
-         buttonDistance = (Button) findViewById(R.id.button_distance);
+        buttonDistance = (Button) findViewById(R.id.button_distance);
 
         buttonDistance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               showCalculation(editDistance, resultDistance, editTitle.getText().toString());
+                showCalculation(editDistance,resultDistance,editTitle.getText().toString());
             }
         });
-
     }
-
-
+//        buttonDistance.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                showCalculation(editDistance, resultDistance, editTitle.getText().toString());
+//            }
+//        });
+//
+//    }
     public void showCalculation(EditText a, TextView b, String e) {
         String value = a.getText().toString();
-
         int finalValue=Integer.parseInt(value);
-
+        double total = finalValue * 1.60;
         if(e.equals("Kilometers") && finalValue > 0) {
-
-            double total = finalValue * 1.60;
-
-            String finalResult = Double.toString(total);
-
-
-            b.setText(finalResult + " Kilometer(s) in" + a.getText().toString() + " Mile(s)");
-        }else if(e.equals("Miles") && finalValue > 0 ) {
-
-            double total = finalValue * 0.62;
-
+            total = finalValue * 1.60;
             String finalResult = Double.toString(total);
 
             b.setText(finalResult);
-
-            b.setText(finalResult + " Mile(s) in" + a.getText().toString() + " Kilometer(s)");
+            b.setText(finalResult + " Kilometer(s) in " + a.getText().toString() + " Mile(s)");
+        }else if(e.equals("Miles") && finalValue > 0 ) {
+            total = finalValue * 0.62;
+            String finalResult = Double.toString(total);
+            b.setText(finalResult);
+            b.setText(finalResult + " Mile(s) in " + a.getText().toString() + " Kilometer(s)");
         } else {
             alertBox();
         }
-
     }
     public void alertBox() {
         AlertDialog alertDialog = new AlertDialog.Builder(Distance.this).create();

@@ -12,13 +12,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="'Liters' or 'Gallons'"
+        android:layout_marginTop="131dp"
+        android:background="@color/white"
         android:ellipsize="start"
+        android:ems="10"
         android:gravity="center_horizontal"
-        android:inputType="text"
-        android:background="@color/white" />
+        android:hint="'Liters' or 'Gallons'"
+        android:inputType="text" />
 
 
     <TextView
@@ -26,9 +26,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="10dp"
         android:background="@color/colorAccent"
         android:text="            Volume"
         android:textSize="18pt" />
@@ -70,29 +67,5 @@
         android:textAlignment="center"
         android:textSize="20sp"
         tools:text="Results" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp"
-        android:background="@android:color/background_light"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Enter l or gal" />
-
-    <Button
-        android:id="@+id/backButton"
-        android:layout_width="109dp"
-        android:layout_height="32dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/page_title"
-        android:layout_marginBottom="12dp"
-        android:background="@android:color/background_light"
-        android:ems="10"
-        android:text="BACK"
-        android:onClick="goBack"/>
 
 </RelativeLayout>

@@ -28,41 +28,37 @@ public class Temperature extends AppCompatActivity {
         buttonTemperature = (Button) findViewById(R.id.button_temperature);
 
         buttonTemperature.setOnClickListener(new View.OnClickListener() {
-
             @Override
-            public void onClick(View v) {
-                displayResults(editTemperature, resultTemperature,titleTemperature.getText().toString());
+            public void onClick (View v){
+                showCalculation(editTemperature,resultTemperature,titleTemperature.getText().toString());
             }
         });
-    }
-
-    public void displayResults(EditText editTemperature, TextView resultTemperature, String titleTemperature) {
-
-        String value = editTemperature.getText().toString();
-        int finalValue = Integer.parseInt(value);
+        }
 
 
-        if(titleTemperature.equals("F") ) {
-
+//        buttonTemperature.setOnClickListener(new View.OnClickListener() {
+//
+//        @Override
+//        public void onClick(View v) {
+//            showCalculation(editTemperature, resultTemperature,titleTemperature.getText().toString());
+//        }
+//    });
+//}
+    public void showCalculation(EditText a, TextView b, String e) {
+        String value = a.getText().toString();
+        int finalValue=Integer.parseInt(value);
+        if(e.equals("Fahrenheit") ) {
             double total = (finalValue-32)* 5/9 ;
-
             String finalResult = Double.toString(total);
-
-
-            resultTemperature.setText(String.format("When it is " + editTemperature.getText().toString() + "F degrees outside, it is " + finalResult  + "C "));
-        }else if(titleTemperature.equals("C")  ) {
-
+            b.setText(String.format("When it is " + a.getText().toString() + "F degrees outside, it is " + finalResult  + "C "));
+        }else if(e.equals("Celsius")  ) {
             double total = (finalValue * 9/5) + 32;
-
             String finalResult = Double.toString(total);
-
-            resultTemperature.setText(finalResult);
-
-            resultTemperature.setText("When it is " + editTemperature.getText().toString() + "C degrees outside, it is" + finalResult  + "F ");
+            b.setText(finalResult);
+            b.setText("When it is " + a.getText().toString() + "C degrees outside, it is " + finalResult  + "F ");
         } else {
             alertBox();
         }
-
     }
     public void alertBox() {
         AlertDialog alertDialog = new AlertDialog.Builder(Temperature.this).create();

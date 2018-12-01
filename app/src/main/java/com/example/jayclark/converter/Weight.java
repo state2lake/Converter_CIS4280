@@ -55,16 +55,16 @@ public class Weight extends AppCompatActivity {
         String value = a.getText().toString();
 
         int finalValue = Integer.parseInt(value);
-        if(e.equals("Pound")  ) {
+        if(e.equals("Pounds")  ) {
 
             double total = finalValue * 0.454;
 
             String finalResult = Double.toString(total);
 
-            b.setText( finalResult + " Kilogram(s) in " + a.getText().toString() + " Pound(s)");
+            b.setText( finalResult + " Pound(s) in " + a.getText().toString() + " Kilogram(s)");
 
 
-        }else if(e.equals("Kilogram")){
+        }else if(e.equals("Kilograms")){
 
 
             double total = finalValue * 2.205;
@@ -73,7 +73,7 @@ public class Weight extends AppCompatActivity {
 
             b.setText(finalResult);
 
-            b.setText( finalResult + " Pound(s) in " + a.getText().toString() + " Kilogram(s)");
+            b.setText( finalResult + " Kilogram(s) in " + a.getText().toString() + " Pound(s)");
             } else  {
             alertBox();
         }if(finalValue < 0) {

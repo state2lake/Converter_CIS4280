@@ -27,7 +27,6 @@ public class Temperature extends AppCompatActivity {
         resultTemperature = (TextView) findViewById(R.id.view_temperature);
         buttonTemperature = (Button) findViewById(R.id.button_temperature);
 
-
         buttonTemperature.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -41,7 +40,6 @@ public class Temperature extends AppCompatActivity {
 
         String value = editTemperature.getText().toString();
         int finalValue = Integer.parseInt(value);
-
 
 
         if(titleTemperature.equals("F") ) {
